@@ -77,6 +77,8 @@ final class Microwave {
         final double defaultTime;
         final double finalTime;
         final double defaultMultiplier;
+        final double finalTimeMinute;
+        final double finalTimeSecond;
 
         final Scanner foodItem = new Scanner(System.in);
 
@@ -127,8 +129,12 @@ final class Microwave {
 
         // print the total amount of minutes and seconds it will take
         } else {
+        finalTimeMinute = Math.floor(finalTime / SUB_TIME);
+        finalTimeSecond = finalTime - (SUB_TIME * finalTimeMinute);
+
             System.out.print("The microwave will take "
-                + finalTime + " seconds.");
+                + finalTimeMinute + " minutes and " + finalTimeSecond + 
+                " seconds.");
         }
 
         System.out.println("\nDone.");
