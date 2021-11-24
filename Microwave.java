@@ -51,6 +51,11 @@ final class Microwave {
     public static final double KILL_SWITCH = 1000.0;
 
     /**
+    * 999.
+    */
+    public static final double NINE_NINE_NINE = 999.0;
+
+    /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
     * if this ever is called
@@ -117,12 +122,12 @@ final class Microwave {
         finalTime = defaultTime * defaultMultiplier;
 
         // an invalid input was made somewhere along the way
-        if (finalTime > 999) {
-            ;
+        if (finalTime > NINE_NINE_NINE) {
+            System.out.print("\n");
 
         // print the total amount of minutes and seconds it will take
         } else {
-            System.out.print("\nThe microwave will take "
+            System.out.print("The microwave will take "
                 + finalTime + " seconds.");
         }
 
