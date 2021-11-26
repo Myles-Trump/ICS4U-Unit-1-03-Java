@@ -133,8 +133,8 @@ final class Microwave {
         finalTimeSecond = finalTime - (SUB_TIME * finalTimeMinute);
 
             System.out.print("The microwave will take "
-                + finalTimeMinute + " minutes and " + finalTimeSecond + 
-                " seconds.");
+                + finalTimeMinute + " minutes and " + finalTimeSecond
+                + " seconds.");
         }
 
         System.out.println("\nDone.");
